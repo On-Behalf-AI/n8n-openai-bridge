@@ -1,0 +1,10 @@
+# EXI-DLP gitleaks config — whitelist upstream false positives
+# All findings are documentation examples (curl -H "Authorization: Bearer sk-...")
+# and .env.example placeholder values from upstream author.
+[allowlist]
+description = "Upstream docs and example configs"
+paths = [
+    '''docs/''',
+    '''\.env\.example''',
+    '''README\.md''',
+]
